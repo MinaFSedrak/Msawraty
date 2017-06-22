@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="egypt.sedrak.insta1.LoginActivity">
+
+    <!-- <include layout="@layout/toolbar_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+     </include>-->
+    <!-- <android.support.v7.widget.Toolbar
+         android:id="@+id/toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:background="?attr/colorPrimary"
+         android:elevation="6dp"
+         android:minHeight="?attr/actionBarSize"
+         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+     </android.support.v7.widget.Toolbar>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin_tittle"
+        android:text="SIGN IN TO START"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layoutButtons"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/signin_tittle"
+        >
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebookLoginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="18dp"
+            android:paddingTop="18dp"
+            android:paddingLeft="40dp"
+            android:layout_below="@id/signin_tittle"
+            ></com.facebook.login.widget.LoginButton>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/facebookLoginBtn"
+            android:background="@drawable/googlebutton"
+            android:textSize="20dp"
+            android:text="Continue With Google"
+            android:drawableLeft="@drawable/common_google_signin_btn_icon_light"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/googleBtn">
+
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutOr"
+        android:layout_marginTop="11dp"
+        android:orientation="horizontal"
+        android:weightSum="3.6"
+        android:layout_below="@+id/layoutButtons"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/line1"
+            android:background="#E6E6E6"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"></LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textSize="20dp"
+            android:textColor="#E6E6E6"
+            android:textAlignment="center"
+            android:layout_below="@id/line1"
+            android:id="@+id/or"
+            android:layout_weight="1.6"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingRight="10dp"
+            android:id="@+id/line2"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_below="@id/or"
+            android:layout_marginEnd="10dp"
+            android:background="#E6E6E6"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"></LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E6E6E6"
+        android:layout_below="@id/layoutOr"
+        android:id="@+id/layoutEditText"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/loginEmailField"
+            android:fontFamily=" Afta Sans"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Email"
+            android:padding="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/loginPasswordField"
+            android:fontFamily=" Afta Sans"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/loginEmailField"
+            android:layout_centerHorizontal="true"
+            android:hint="Password"
+            android:padding="15dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+            android:id="@+id/loginBtn"
+            android:layout_below="@+id/passwordField"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:background="@drawable/mybutton"
+            android:textSize="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dontHaveAccount"
+                android:layout_below="@+id/loginBtn"
+                android:text="Don't have an account ?"
+                android:textSize="15dp"
+                android:fontFamily=" Afta Sans"
+                android:textAlignment="center"
+                android:layout_weight="1"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Sign up"
+                android:fontFamily=" Afta Sans"
+                android:id="@+id/newAccountBtn"
+                android:layout_below="@+id/dontHaveAccount"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textColor="#72bccc"
+                android:layout_weight="1"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

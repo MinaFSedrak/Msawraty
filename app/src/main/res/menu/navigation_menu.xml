@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey"
+    app:itemIconTint="@color/colorAccent"
+    app:itemTextColor="@color/colorAccent"
+
+    >
+
+    <item android:id="@+id/action_myProfile"
+        android:icon="@mipmap/ic_person_black_24dp"
+        android:title="My Profile"
+        android:visible="false"/>
+
+    <item android:id="@+id/action_home"
+        android:icon="@mipmap/ic_home_black_24dp"
+        android:title="Home"></item>
+
+
+    <item android:id="@+id/action_myRequests"
+        android:icon="@mipmap/ic_email_white_18dp"
+        android:title="Requests"/>
+
+
+    <item android:id="@+id/action_wedding"
+        android:icon="@mipmap/categorie1"
+        android:title="Wedding and Engagement"/>
+
+
+    <item android:id="@+id/action_graduation"
+        android:icon="@mipmap/categorie2"
+        android:title="Graduations"/>
+
+    <item android:id="@+id/action_photoBooth"
+        android:icon="@mipmap/categorie3"
+        android:title="PhotoBooths"/>
+
+
+    <item android:id="@+id/action_birthday"
+        android:icon="@mipmap/categorie4"
+        
+        android:title="Birthdays"/>
+
+
+
+
+
+
+    <!--   <item android:id="@+id/action_aboutUs"
+           android:title="About Us"/>-->
+
+
+    <item android:id="@+id/action_logout"
+        android:icon="@mipmap/ic_lock_black_24dp"
+        android:title="Logout"/>
+
+
+
+</menu >

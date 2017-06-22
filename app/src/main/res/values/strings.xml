@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Msawraty</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="packages">Packages</string>
+    <string name="photos">Photos</string>
+    <string-array name="Category_array">
+        <item>Wedding_and_Engagement</item>
+        <item>Birthday</item>
+        <item>Graduation</item>
+        <item>PhotoBooth</item>
+    </string-array>
+
+    <string name="facebook_app_id">1781642478778619</string>
+
+</resources>

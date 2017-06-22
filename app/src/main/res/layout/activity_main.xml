@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="egypt.sedrak.insta1.MainActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/main_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- <include layout="@layout/toolbar_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         </include>-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:elevation="6dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:id="@+id/recyclerView_photographers">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+        <!-- <android.support.design.widget.TabLayout
+             android:id="@+id/tab_layout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/toolbar"
+             android:background="?attr/colorPrimary"
+             android:elevation="6dp"
+             android:minHeight="?attr/actionBarSize"
+             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+         </android.support.design.widget.TabLayout>
+
+         <android.support.v4.view.ViewPager
+             android:id="@+id/pager"
+             android:layout_width="match_parent"
+             android:layout_height="fill_parent"
+             android:layout_below="@id/tab_layout">
+         </android.support.v4.view.ViewPager>-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you Photographer ?"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.2"
+            android:layout_below="@+id/recyclerView_photographers"
+            android:id="@+id/areYouPhotographer"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu"
+        android:background="@color/grey"
+        app:itemIconTint="@color/colorAccent"
+        app:itemTextColor="@color/colorAccent"
+        app:headerLayout="@layout/navigation_header">
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>
